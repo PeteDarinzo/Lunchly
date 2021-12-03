@@ -1,6 +1,5 @@
 /** Database for lunchly */
 
-/** Database setup for BizTime. */
 
 const {Client} = require('pg');
 
