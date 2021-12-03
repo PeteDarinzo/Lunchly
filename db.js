@@ -10,11 +10,9 @@ let DB_URI;
 /*** SPRINGBOARD METHOD ***/
 
 
-if (process.env.NODE_ENV === "test") {
-  DB_URI = "postgresql:///test_biztime";
-} else {
-  DB_URI = "postgresql:///biztime";
-}
+
+  DB_URI = "postgresql:///lunchly";
+
 
 let db = new Client({
     connectionString: DB_URI
@@ -35,7 +33,7 @@ let db = new Client({
 //     database: "" // LEAVE BLANK
 // }
 
-// DB_URI.database = (process.env.NODE_ENV === 'test') ? "test_biztime" : "lunchly";
+// DB_URI.database = (process.env.NODE_ENV === 'test') ? "test_lunchly" : "lunchly";
 
 // let db = new Client(DB_URI);
 
