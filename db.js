@@ -10,15 +10,15 @@ let DB_URI;
 /*** SPRINGBOARD METHOD ***/
 
 
-// if (process.env.NODE_ENV === "test") {
-//   DB_URI = "postgresql:///test_biztime";
-// } else {
-//   DB_URI = "postgresql:///biztime";
-// }
+if (process.env.NODE_ENV === "test") {
+  DB_URI = "postgresql:///test_biztime";
+} else {
+  DB_URI = "postgresql:///biztime";
+}
 
-// let db = new Client({
-//     connectionString: DB_URI
-// });
+let db = new Client({
+    connectionString: DB_URI
+});
 
 
 /*** END SPRINGBOARD METHOD ***/
@@ -28,16 +28,16 @@ let DB_URI;
 /*** MY METHOD ***/
 
 
-DB_URI = {
-    host: "localhost",
-    user: "pete", // your username 
-    password: "vampire", // your password
-    database: "" // LEAVE BLANK
-}
+// DB_URI = {
+//     host: "localhost",
+//     user: "", // your username 
+//     password: "", // your password
+//     database: "" // LEAVE BLANK
+// }
 
-DB_URI.database = (process.env.NODE_ENV === 'test') ? "test_biztime" : "lunchly";
+// DB_URI.database = (process.env.NODE_ENV === 'test') ? "test_biztime" : "lunchly";
 
-let db = new Client(DB_URI);
+// let db = new Client(DB_URI);
 
 
 /*** END MY METHOD ***/

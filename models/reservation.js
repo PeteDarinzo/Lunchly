@@ -4,7 +4,6 @@ const moment = require("moment");
 
 const db = require("../db");
 
-
 /** A reservation for a party */
 
 class Reservation {
@@ -31,7 +30,6 @@ class Reservation {
       this._numGuests = num;
     }
   }
-
 
   /** Reservation notes getter and setter. */
 
